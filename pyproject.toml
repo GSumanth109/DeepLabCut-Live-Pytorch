@@ -1,0 +1,25 @@
+# dlc-live-gui-pytorch/pyproject.toml
+
+[project]
+name = "dlc_live_torch"
+version = "1.0.0"
+description = "A high-performance, real-time GUI for DeepLabCut-PyTorch models, enabling 60+ FPS inference on RTX 4090."
+authors = [{ name = "Your Name", email = "your.email@example.com" }]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+dependencies = [
+    "PyQt5",
+    "opencv-python-headless",
+    "numpy",
+    "pyyaml",
+    "psutil; sys_platform != 'darwin'", # psutil is available on most systems
+    "torch",
+    "deeplabcut" 
+]
+
+[project.urls]
+Homepage = "https://github.com/your-username/dlc-live-gui-pytorch"
+
+[project.scripts]
+dlc-live-torch = "dlc_live_torch.app:main"
