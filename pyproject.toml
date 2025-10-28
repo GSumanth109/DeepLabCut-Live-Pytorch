@@ -19,7 +19,7 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/your-username/dlc-live-gui-pytorch"
+Homepage = "https://github.com/your-username/DeepLabCut-Live_Pytorch"
 
 [project.scripts]
 dlc-live-torch = "dlc_live_torch.app:main"
